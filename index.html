@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="quiz-container">
+    <div class="hero-logo">
+      <img src="assets/hero-icon.svg" alt="Quiz game icon" />
+    </div>
+
+    <h1>Quiz Game</h1>
+    <p class="description">Test your knowledge with this quick web quiz.</p>
+
+    <section class="quiz-card">
+      <div class="question-box">
+        <p id="question">Loading question...</p>
+      </div>
+
+      <div class="answer-grid">
+        <button class="answer-btn" data-answer="0" id="answer0"></button>
+        <button class="answer-btn" data-answer="1" id="answer1"></button>
+        <button class="answer-btn" data-answer="2" id="answer2"></button>
+        <button class="answer-btn" data-answer="3" id="answer3"></button>
+      </div>
+
+      <div class="footer">
+        <p id="status">Question 1 of 5</p>
+        <button id="nextBtn" class="next-btn" disabled>Next</button>
+      </div>
+    </section>
+
+    <section class="result hidden" id="resultCard">
+      <h2>Quiz Completed!</h2>
+      <p id="scoreText"></p>
+      <button id="restartBtn" class="restart-btn">Play Again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
